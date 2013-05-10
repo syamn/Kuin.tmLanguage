@@ -1,0 +1,155 @@
+<!-- 
+Kuin syntax definitions for Sublime Text 2
+(kuin.tmLanguage)
+maintainer: syamn <@starlightp>
+
+How to use:
+1. Open your "Packages" directory (Preferences/Browse Packages...)
+2. Open "Kuin" directory (make it if not exists)
+3. Clone this file
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>fileTypes</key>
+	<array>
+		<string>kn</string>
+	</array>
+	<key>name</key>
+	<string>Kuin</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>{</string>
+			<key>end</key>
+			<string>}</string>
+			<key>name</key>
+			<string>comment.comment.kuin</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.kuin</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.kuin</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.kuin</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>constant.character.escape.kuin</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b((end )?func)\b</string>
+			<key>name</key>
+			<string>entity.name.function.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b((end )?class)\b</string>
+			<key>name</key>
+			<string>entity.name.function.class.kuin</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.import.kuin</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.import.kuin</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(import)\s+(\w+)?</string>
+			<key>name</key>
+			<string>keyword.control.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string> ?@new\b</string>
+			<key>name</key>
+			<string>keyword.control.new.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(class|enum|alias)\b</string>
+			<key>name</key>
+			<string>storage.modifier.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(skip|block|end|do|break|return|continue|assert|ifdef|debug|release)\b</string>
+			<key>name</key>
+			<string>keyword.control.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(if|else|elif|while|for|foreach|throw|try|catch|finally)\b</string>
+			<key>name</key>
+			<string>keyword.control.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(switch|case|default)\b</string>
+			<key>name</key>
+			<string>keyword.control.switch.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(true|false|null|nan|inf)\b</string>
+			<key>name</key>
+			<string>constant.language.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(var|const|int|byte8|byte16|byte32|byte64|sbyte8|sbyte16|sbyte32|sbyte64|float|char|bool|complex|money|ratio|list|stack|queue|dict)\b</string>
+			<key>name</key>
+			<string>storage.type.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(=|&lt;&gt;|&lt;=|&lt;|&gt;=|&gt;)</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.kuin</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(:[:\+\-\*%\^~])</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.kuin</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.kuin</string>
+	<key>uuid</key>
+	<string>9360664a-7492-4358-8410-4353982f2921</string>
+</dict>
+</plist>
