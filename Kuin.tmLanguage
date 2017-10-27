@@ -63,40 +63,15 @@ How to use:
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((end )?func)\b</string>
+			<string>\b(end )?func\b</string>
 			<key>name</key>
 			<string>entity.name.function.kuin</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((end )?class)\b</string>
+			<string>\b(end )?class\b</string>
 			<key>name</key>
 			<string>entity.name.function.class.kuin</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.import.kuin</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>storage.modifier.import.kuin</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>\b(import)\s+(\w+)?</string>
-			<key>name</key>
-			<string>keyword.control.kuin</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string> ?@new\b</string>
-			<key>name</key>
-			<string>keyword.control.new.kuin</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -106,13 +81,13 @@ How to use:
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(skip|block|end|do|break|return|continue|assert|ifdef|debug|release)\b</string>
+			<string>\b(skip|block|end|do|break|rtn|assert|dbg)\b</string>
 			<key>name</key>
 			<string>keyword.control.kuin</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|else|elif|while|for|foreach|throw|try|catch|finally)\b</string>
+			<string>\b(if|else|elif|while|for|throw|try|catch|finally)\b</string>
 			<key>name</key>
 			<string>keyword.control.kuin</string>
 		</dict>
@@ -124,13 +99,13 @@ How to use:
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(true|false|null|nan|inf)\b</string>
+			<string>\b(true|false|null|inf)\b</string>
 			<key>name</key>
 			<string>constant.language.kuin</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(var|const|int|byte8|byte16|byte32|byte64|sbyte8|sbyte16|sbyte32|sbyte64|float|char|bool|complex|money|ratio|list|stack|queue|dict)\b</string>
+			<string>\b(var|const|int|bit8|bit16|bit32|bit64|float|char|bool|list|stack|queue|dict)\b</string>
 			<key>name</key>
 			<string>storage.type.kuin</string>
 		</dict>
