@@ -81,7 +81,7 @@ How to use:
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(skip|block|end|do|break|rtn|assert|dbg)\b</string>
+			<string>\b(skip|block|end|do|break|ret|assert|dbg)\b</string>
 			<key>name</key>
 			<string>keyword.control.kuin</string>
 		</dict>
