@@ -20,6 +20,3 @@ Kuin syntax definitions for Sublime Text 2
 コメントのネストも未対応です。
 
 { Kuin 0.3で文法が固定されるみたい[要出典]なので、その後にちゃんとした定義ファイルに更新します。 }
-
-# foobar
-## hoge
